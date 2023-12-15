@@ -1,7 +1,7 @@
 This bash script 
 
 1. checks for nextcloud desktop appimage updates,
-2. downloads the latest appimage if available,
+2. downloads the latest appimage if an update is available,
 3. runs the latest version.
 
 Put it where you keep the nextcloud dektop clients appimages 
