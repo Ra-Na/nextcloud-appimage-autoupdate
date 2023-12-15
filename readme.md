@@ -5,8 +5,9 @@ This bash script
 3. runs the latest version.
 
 Put it where you keep the nextcloud dektop clients appimages 
-(usually ~/Downloads) and run it on each startup, e.g. by putting 
+(usually ~/Downloads), make it executable `chmod +x runnc.sh` 
+and run it on each startup, e.g. by putting 
 
-~/Downloads/runnc.sh
+`~/Downloads/runnc.sh`
 
 as a "startup applications preferences" command.
