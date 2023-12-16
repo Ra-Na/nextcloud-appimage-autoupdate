@@ -6,8 +6,4 @@ This bash script
 
 Put it where you keep the nextcloud dektop clients appimages 
 (usually ~/Downloads), make it executable `chmod +x runnc.sh` 
-and run it on each startup, e.g. by putting 
-
-`/home/USERNAME/Downloads/runnc.sh`   (`~/Downloads/runnc.sh` may not work)
-
-as a "startup applications preferences" command.
+and run it on each startup automatically.
