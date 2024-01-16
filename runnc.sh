@@ -6,8 +6,14 @@ cd ~/Downloads
 
 sleep 10 # in case of autostart, wait some seconds for internet connection to come up
 
+online=$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo yes || echo no)
+
+echo "online: $online"
+
+if [ "$online" == "yes" ]; then
+
 # get latest release version 
-newest=$(curl 'https://github.com/nextcloud-releases/desktop/releases' | grep -oP '(?<=Link">Release )[.0-9]+' | head -1)
+newest=$(wget https://github.com/nextcloud-releases/desktop/releases/latest  2>&1 | grep "Location:" | grep -oP '[.0-9]+' | tail -1)
 
 echo -e "\n\n\n Latest version in github repo: $newest"
 
@@ -23,7 +29,7 @@ if [ "$current" != "$newest" ]; then
     cmd="chmod +x Nextcloud-$newest-x86_64.AppImage"
     eval "$cmd"
 fi
-
+fi
 
 # run latest version
 pre="./"
