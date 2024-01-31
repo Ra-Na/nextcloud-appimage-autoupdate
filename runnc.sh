@@ -11,7 +11,9 @@ wget -q --spider https://github.com
 if [ $? -eq 0 ]; then
 echo "Online."
 # get latest release version 
-newest=$(wget https://github.com/nextcloud-releases/desktop/releases/latest  2>&1 | grep "Location:" | grep -oP '[.0-9]+' | tail -1)
+rm latest
+wget https://github.com/nextcloud-releases/desktop/releases/latest
+newest=$(grep "Release Release " latest | head -1 | grep -oP '[.0-9]+' )
 
 echo "Latest version in github repo: $newest"
 
