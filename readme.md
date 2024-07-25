@@ -1,3 +1,6 @@
+
+
+
 This bash script 
 
 1. checks https://github.com/nextcloud-releases/desktop/releases
@@ -8,3 +11,6 @@ This bash script
 Put it where you keep the nextcloud dektop clients appimages 
 (usually ~/Downloads), make it executable `chmod +x runnc.sh` 
 and run it on each startup automatically.
+
+
+*This repo has migrated to [https://codeberg.org/Ra-Na/nextcloud-appimage-autoupdate](https://codeberg.org/Ra-Na/nextcloud-appimage-autoupdate)*
