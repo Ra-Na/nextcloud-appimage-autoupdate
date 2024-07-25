@@ -1,10 +1,6 @@
+A simple bash script that
 
-
-
-This bash script 
-
-1. checks https://github.com/nextcloud-releases/desktop/releases
-   for nextcloud desktop client appimage updates,
+1. checks at nextcloud.com for nextcloud desktop client appimage updates,
 2. downloads the latest appimage if an update is available,
 3. runs the latest version.
 
